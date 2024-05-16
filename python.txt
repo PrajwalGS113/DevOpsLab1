@@ -1,0 +1,52 @@
+def print_menu():
+    print("1.display all numbers")
+    print("2.add a number")
+    print("3.lookup a number")
+    print("4.quit")
+    print("5.sort")
+    print()
+    
+numbers={}
+menu_choice=0
+count=0
+print_menu()
+while menu_choice!=4:
+    menu_choice=int(input("type in a number(1-4):"))
+    if(menu_choice==1):
+        print("Telephone Numbers:")
+        for x in numbers.keys():
+            print("Name: ",x ,"\tNumber: ",numbers[x])
+        print()
+    elif menu_choice==2:
+        print("Add name and number")
+        name=input("Name: ")
+        phone=input("Number: ")
+        numbers[name]=phone
+    elif menu_choice==3:
+        print("lookup a number")
+        name=input("Name: ")
+        if name in numbers:
+            print("the number is",numbers[name])
+            if(int(numbers[name])%2==0):
+                print("number is even")
+            else:
+                print("number is odd")
+            for y in numbers[name]:
+                count=count+1
+            if(count==10):
+                print("valid number")
+            else:
+                print("invalid number")
+    elif menu_choice==5:
+        for x in range(0,len[numbers]:
+              max=
+            
+        else:
+            print(name,"was not found")
+    elif menu_choice!=4:
+        print_menu()
+                    
+                    
+    
+
+        
